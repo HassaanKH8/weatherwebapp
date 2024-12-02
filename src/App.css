@@ -1,38 +1,162 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page {
+  width: 100%;
+  height: 100vh;
+  background-color: #efeee9;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: 80px;
+  background-color: #36454f;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.weatherheading {
+  font-family: "EB Garamond", serif;
+  font-size: 36px;
+  font-weight: 500;
+  color: #efeee9;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bottom-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: calc(100vh-80px);
+  background-color: #efeee9;
+  justify-content: center;
+  align-items: center;
+}
+
+.selectcity {
+  font-family: "EB Garamond", serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #36454f;
+  margin-top: 40px;
+}
+
+.cinput {
+  border: none;
+  background-color: #36454f;
+  color: #efeee9;
+  border-radius: 14px;
+  padding: 14px;
+  height: 40px;
+  width: 250px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+}
+
+.cinput::placeholder {
+  color: #bfbfbf;
+}
+
+.subcity {
+  background-color: #36454f;
+  color: #efeee9;
+  font-size: 16px;
+  font-weight: 300;
+  font-family: "EB Garamond", serif;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.subcity:hover {
+  background-color: #efeee9;
+  color: #36454f;
+}
+
+
+/* Weather Container */
+.weather-container {
+  background-color: #36454f;
+  color: #efeee9;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 1px 4px 8px rgba(213, 255, 88, 0.6);
+
+}
+
+/* Forecast Container */
+.forecast-container {
+  background-color: #36454f;
+  color: #efeee9;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 1200px;
+  box-shadow: 1px 4px 8px rgba(213, 255, 88, 0.6);
+
+}
+
+/* Forecast List */
+.forecast-list {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+.forecast-item {
+  background-color: #2e3a47;
+  color: #efeee9;
+  margin-right: 20px;
+  padding: 15px;
+  border-radius: 12px;
+  min-width: 250px; /* Set a minimum width for each forecast item */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Forecast Item Hover */
+.forecast-item:hover {
+  background-color: #1c2731;
+}
+
+/* Header styles */
+h2, h3 {
+  color: #efeee9;
+  font-family: "EB Garamond", serif;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+  font-family: "EB Garamond", serif;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1em;
+  margin: 5px 0;
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+}
+
+.cityName {
+  font-family: "EB Garamond", serif;
+  font-weight: 500;
+}
+
+.citydes {
+  margin-bottom: 10px;
 }
